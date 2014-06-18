@@ -86,158 +86,87 @@ Afterwards, it performs a summary of dataTidy as the average of the variables pe
 <tr><td></td></tr>
 </table>
 
-# data.tidy dataset
-Where each row is an observation of a given subject and activity for the variables
-
+# variables description
 <table>
-<tr><td>Variable</td></tr>
-<tr><td>subject</td></tr>
-<tr><td>Time.BodyAcc.Mean.X</td></tr>
-<tr><td>Time.BodyAcc.Mean.Y</td></tr>
-<tr><td>Time.BodyAcc.Mean.Z</td></tr>
-<tr><td>Time.BodyAcc.Std.X</td></tr>
-<tr><td>Time.BodyAcc.Std.Y</td></tr>
-<tr><td>Time.BodyAcc.Std.Z</td></tr>
-<tr><td>Time.GravityAcc.Mean.X</td></tr>
-<tr><td>Time.GravityAcc.Mean.Y</td></tr>
-<tr><td>Time.GravityAcc.Mean.Z</td></tr>
-<tr><td>Time.GravityAcc.Std.X</td></tr>
-<tr><td>Time.GravityAcc.Std.Y</td></tr>
-<tr><td>Time.GravityAcc.Std.Z</td></tr>
-<tr><td>Time.BodyAccJerk.Mean.X</td></tr>
-<tr><td>Time.BodyAccJerk.Mean.Y</td></tr>
-<tr><td>Time.BodyAccJerk.Mean.Z</td></tr>
-<tr><td>Time.BodyAccJerk.Std.X</td></tr>
-<tr><td>Time.BodyAccJerk.Std.Y</td></tr>
-<tr><td>Time.BodyAccJerk.Std.Z</td></tr>
-<tr><td>Time.BodyGyro.Mean.X</td></tr>
-<tr><td>Time.BodyGyro.Mean.Y</td></tr>
-<tr><td>Time.BodyGyro.Mean.Z</td></tr>
-<tr><td>Time.BodyGyro.Std.X</td></tr>
-<tr><td>Time.BodyGyro.Std.Y</td></tr>
-<tr><td>Time.BodyGyro.Std.Z</td></tr>
-<tr><td>Time.BodyGyroJerk.Mean.X</td></tr>
-<tr><td>Time.BodyGyroJerk.Mean.Y</td></tr>
-<tr><td>Time.BodyGyroJerk.Mean.Z</td></tr>
-<tr><td>Time.BodyGyroJerk.Std.X</td></tr>
-<tr><td>Time.BodyGyroJerk.Std.Y</td></tr>
-<tr><td>Time.BodyGyroJerk.Std.Z</td></tr>
-<tr><td>Time.BodyAccMag.Mean</td></tr>
-<tr><td>Time.BodyAccMag.Std</td></tr>
-<tr><td>Time.GravityAccMag.Mean</td></tr>
-<tr><td>Time.GravityAccMag.Std</td></tr>
-<tr><td>Time.BodyAccJerkMag.Mean</td></tr>
-<tr><td>Time.BodyAccJerkMag.Std</td></tr>
-<tr><td>Time.BodyGyroMag.Mean</td></tr>
-<tr><td>Time.BodyGyroMag.Std</td></tr>
-<tr><td>Time.BodyGyroJerkMag.Mean</td></tr>
-<tr><td>Time.BodyGyroJerkMag.Std</td></tr>
-<tr><td>FFT.BodyAcc.Mean.X</td></tr>
-<tr><td>FFT.BodyAcc.Mean.Y</td></tr>
-<tr><td>FFT.BodyAcc.Mean.Z</td></tr>
-<tr><td>FFT.BodyAcc.Std.X</td></tr>
-<tr><td>FFT.BodyAcc.Std.Y</td></tr>
-<tr><td>FFT.BodyAcc.Std.Z</td></tr>
-<tr><td>FFT.BodyAccJerk.Mean.X</td></tr>
-<tr><td>FFT.BodyAccJerk.Mean.Y</td></tr>
-<tr><td>FFT.BodyAccJerk.Mean.Z</td></tr>
-<tr><td>FFT.BodyAccJerk.Std.X</td></tr>
-<tr><td>FFT.BodyAccJerk.Std.Y</td></tr>
-<tr><td>FFT.BodyAccJerk.Std.Z</td></tr>
-<tr><td>FFT.BodyGyro.Mean.X</td></tr>
-<tr><td>FFT.BodyGyro.Mean.Y</td></tr>
-<tr><td>FFT.BodyGyro.Mean.Z</td></tr>
-<tr><td>FFT.BodyGyro.Std.X</td></tr>
-<tr><td>FFT.BodyGyro.Std.Y</td></tr>
-<tr><td>FFT.BodyGyro.Std.Z</td></tr>
-<tr><td>FFT.BodyAccMag.Mean</td></tr>
-<tr><td>FFT.BodyAccMag.Std</td></tr>
-<tr><td>FFT.BodyBodyAccJerkMag.Mean</td></tr>
-<tr><td>FFT.BodyBodyAccJerkMag.Std</td></tr>
-<tr><td>FFT.BodyBodyGyroMag.Mean</td></tr>
-<tr><td>FFT.BodyBodyGyroMag.Std</td></tr>
-<tr><td>FFT.BodyBodyGyroJerkMag.Mean</td></tr>
-<tr><td>FFT.BodyBodyGyroJerkMag.Std</td></tr>
-<tr><td>activity.name</td></tr>
+<tr><td>variable</td><td>class</td><td>description</td></tr>
+<tr><td>subject</td><td>integer</td><td>Subject of the test</td></tr>
+<tr><td>Time.BodyAcc.Mean.X</td><td>numeric</td><td>Time Body Acceleration Mean of axis X</td></tr>
+<tr><td>Time.BodyAcc.Mean.Y</td><td>numeric</td><td>Time Body Acceleration Mean of axis Y</td></tr>
+<tr><td>Time.BodyAcc.Mean.Z</td><td>numeric</td><td>Time Body Acceleration Mean of axis Z</td></tr>
+<tr><td>Time.BodyAcc.Std.X</td><td>numeric</td><td>Time Body Acceleration Standard Deviation of axis X</td></tr>
+<tr><td>Time.BodyAcc.Std.Y</td><td>numeric</td><td>Time Body Acceleration Standard Deviation of axis Y</td></tr>
+<tr><td>Time.BodyAcc.Std.Z</td><td>numeric</td><td>Time Body Acceleration Standard Deviation of axis Z</td></tr>
+<tr><td>Time.GravityAcc.Mean.X</td><td>numeric</td><td>Time Gravity Acceleration Mean of axis X</td></tr>
+<tr><td>Time.GravityAcc.Mean.Y</td><td>numeric</td><td>Time Gravity Acceleration Mean of axis Y</td></tr>
+<tr><td>Time.GravityAcc.Mean.Z</td><td>numeric</td><td>Time Gravity Acceleration Mean of axis Z</td></tr>
+<tr><td>Time.GravityAcc.Std.X</td><td>numeric</td><td>Time Gravity Acceleration Standard Deviation of axis X</td></tr>
+<tr><td>Time.GravityAcc.Std.Y</td><td>numeric</td><td>Time Gravity Acceleration Standard Deviation of axis Y</td></tr>
+<tr><td>Time.GravityAcc.Std.Z</td><td>numeric</td><td>Time Gravity Acceleration Standard Deviation of axis Z</td></tr>
+<tr><td>Time.BodyAccJerk.Mean.X</td><td>numeric</td><td>Time Body Acceleration Jerk Mean of axis X</td></tr>
+<tr><td>Time.BodyAccJerk.Mean.Y</td><td>numeric</td><td>Time Body Acceleration Jerk Mean of axis Y</td></tr>
+<tr><td>Time.BodyAccJerk.Mean.Z</td><td>numeric</td><td>Time Body Acceleration Jerk Mean of axis Z</td></tr>
+<tr><td>Time.BodyAccJerk.Std.X</td><td>numeric</td><td>Time Body Acceleration Jerk Standard Deviation of axis X</td></tr>
+<tr><td>Time.BodyAccJerk.Std.Y</td><td>numeric</td><td>Time Body Acceleration Jerk Standard Deviation of axis Y</td></tr>
+<tr><td>Time.BodyAccJerk.Std.Z</td><td>numeric</td><td>Time Body Acceleration Jerk Standard Deviation of axis Z</td></tr>
+<tr><td>Time.BodyGyro.Mean.X</td><td>numeric</td><td>Time Body Gyroscope Mean of axis X</td></tr>
+<tr><td>Time.BodyGyro.Mean.Y</td><td>numeric</td><td>Time Body Gyroscope Mean of axis Y</td></tr>
+<tr><td>Time.BodyGyro.Mean.Z</td><td>numeric</td><td>Time Body Gyroscope Mean of axis Z</td></tr>
+<tr><td>Time.BodyGyro.Std.X</td><td>numeric</td><td>Time Body Gyroscope St. Deviation of axis X</td></tr>
+<tr><td>Time.BodyGyro.Std.Y</td><td>numeric</td><td>Time Body Gyroscope St. Deviation of axis Y</td></tr>
+<tr><td>Time.BodyGyro.Std.Z</td><td>numeric</td><td>Time Body Gyroscope St. Deviation of axis Z</td></tr>
+<tr><td>Time.BodyGyroJerk.Mean.X</td><td>numeric</td><td>Time Body Gyroscope Jerk Mean of axis X</td></tr>
+<tr><td>Time.BodyGyroJerk.Mean.Y</td><td>numeric</td><td>Time Body Gyroscope Jerk Mean of axis Y</td></tr>
+<tr><td>Time.BodyGyroJerk.Mean.Z</td><td>numeric</td><td>Time Body Gyroscope Jerk Mean of axis Z</td></tr>
+<tr><td>Time.BodyGyroJerk.Std.X</td><td>numeric</td><td>Time Body Gyroscope Jerk St. Deviation of axis X</td></tr>
+<tr><td>Time.BodyGyroJerk.Std.Y</td><td>numeric</td><td>Time Body Gyroscope Jerk St. Deviation of axis Y</td></tr>
+<tr><td>Time.BodyGyroJerk.Std.Z</td><td>numeric</td><td>Time Body Gyroscope Jerk St. Deviation of axis Z</td></tr>
+<tr><td>Time.BodyAccMag.Mean</td><td>numeric</td><td>Time Body Acceleration Euclidean Norm Mean</td></tr>
+<tr><td>Time.BodyAccMag.Std</td><td>numeric</td><td>Time Body Acceleration Euclidean Norm St.Dev</td></tr>
+<tr><td>Time.GravityAccMag.Mean</td><td>numeric</td><td>Time Gravity Acceleration Euclidean Norm Mean</td></tr>
+<tr><td>Time.GravityAccMag.Std</td><td>numeric</td><td>Time Gravity Acceleration Euclidean Norm St.Dev</td></tr>
+<tr><td>Time.BodyAccJerkMag.Mean</td><td>numeric</td><td>Time Body Acceleration Jerk Euclidean Norm Mean</td></tr>
+<tr><td>Time.BodyAccJerkMag.Std</td><td>numeric</td><td>Time Body Acceleration Jerk Euclidean Norm St.Dev</td></tr>
+<tr><td>Time.BodyGyroMag.Mean</td><td>numeric</td><td>Time Body Gyroscope Euclidean Norm Mean</td></tr>
+<tr><td>Time.BodyGyroMag.Std</td><td>numeric</td><td>Time Body Gyroscope Euclidean Norm St.Dev</td></tr>
+<tr><td>Time.BodyGyroJerkMag.Mean</td><td>numeric</td><td>Time Body Gyroscope Euclidean Norm Jerk Mean</td></tr>
+<tr><td>Time.BodyGyroJerkMag.Std</td><td>numeric</td><td>Time Body Gyroscope Euclidean Norm Jerk St.Dev</td></tr>
+<tr><td>FFT.BodyAcc.Mean.X</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration</td></tr>
+<tr><td>FFT.BodyAcc.Mean.Y</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration</td></tr>
+<tr><td>FFT.BodyAcc.Mean.Z</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration</td></tr>
+<tr><td>FFT.BodyAcc.Std.X</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration</td></tr>
+<tr><td>FFT.BodyAcc.Std.Y</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration</td></tr>
+<tr><td>FFT.BodyAcc.Std.Z</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration</td></tr>
+<tr><td>FFT.BodyAccJerk.Mean.X</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration Jerk</td></tr>
+<tr><td>FFT.BodyAccJerk.Mean.Y</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration Jerk</td></tr>
+<tr><td>FFT.BodyAccJerk.Mean.Z</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration Jerk</td></tr>
+<tr><td>FFT.BodyAccJerk.Std.X</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration Jerk</td></tr>
+<tr><td>FFT.BodyAccJerk.Std.Y</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration Jerk</td></tr>
+<tr><td>FFT.BodyAccJerk.Std.Z</td><td>numeric</td><td>Fast Fourier Transform of Body Acceleration Jerk</td></tr>
+<tr><td>FFT.BodyGyro.Mean.X</td><td>numeric</td><td>Fast Fourier Transform of Gyroscope</td></tr>
+<tr><td>FFT.BodyGyro.Mean.Y</td><td>numeric</td><td>Fast Fourier Transform of Gyroscope</td></tr>
+<tr><td>FFT.BodyGyro.Mean.Z</td><td>numeric</td><td>Fast Fourier Transform of Gyroscope</td></tr>
+<tr><td>FFT.BodyGyro.Std.X</td><td>numeric</td><td>Fast Fourier Transform of Gyroscope</td></tr>
+<tr><td>FFT.BodyGyro.Std.Y</td><td>numeric</td><td>Fast Fourier Transform of Gyroscope</td></tr>
+<tr><td>FFT.BodyGyro.Std.Z</td><td>numeric</td><td>Fast Fourier Transform of Gyroscope</td></tr>
+<tr><td>FFT.BodyAccMag.Mean</td><td>numeric</td><td>Fast Fourier Transform Body Acceleration Euclidean norm</td></tr>
+<tr><td>FFT.BodyAccMag.Std</td><td>numeric</td><td>Fast Fourier Transform Body Acceleration Euclidean norm</td></tr>
+<tr><td>FFT.BodyBodyAccJerkMag.Mean</td><td>numeric</td><td>Fast Fourier Transform Body Acceleration Jerk Euclidean norm</td></tr>
+<tr><td>FFT.BodyBodyAccJerkMag.Std</td><td>numeric</td><td>Fast Fourier Transform Body Acceleration Jerk Euclidean norm</td></tr>
+<tr><td>FFT.BodyBodyGyroMag.Mean</td><td>numeric</td><td>Fast Fourier Transform of Body Gyroscope Euclidean Norm</td></tr>
+<tr><td>FFT.BodyBodyGyroMag.Std</td><td>numeric</td><td>Fast Fourier Transform of Body Gyroscope Euclidean Norm</td></tr>
+<tr><td>FFT.BodyBodyGyroJerkMag.Mean</td><td>numeric</td><td>Fast Fourier Transform of Body Gyroscope Jerk Euclidean Norm</td></tr>
+<tr><td>FFT.BodyBodyGyroJerkMag.Std</td><td>numeric</td><td>Fast Fourier Transform of Body Gyroscope Jerk Euclidean Norm</td></tr>
+<tr><td>activity.name</td><td>character</td><td>description of the activity being done by the subject</td></tr>
 <tr><td></td></tr>
 </table>
 
+
+# data.tidy dataset
+Where each row is an observation of a given subject and activity for the variables
 
 # data.tidyMean dataset
 Where each row is the mean of the variables per subject and activity.
 
-<table>
-<tr><td>Variables</td></tr>
-<tr><td>subject</td></tr>
-<tr><td>activity.name</td></tr>
-<tr><td>Time.BodyAcc.Mean.X</td></tr>
-<tr><td>Time.BodyAcc.Mean.Y</td></tr>
-<tr><td>Time.BodyAcc.Mean.Z</td></tr>
-<tr><td>Time.BodyAcc.Std.X</td></tr>
-<tr><td>Time.BodyAcc.Std.Y</td></tr>
-<tr><td>Time.BodyAcc.Std.Z</td></tr>
-<tr><td>Time.GravityAcc.Mean.X</td></tr>
-<tr><td>Time.GravityAcc.Mean.Y</td></tr>
-<tr><td>Time.GravityAcc.Mean.Z</td></tr>
-<tr><td>Time.GravityAcc.Std.X</td></tr>
-<tr><td>Time.GravityAcc.Std.Y</td></tr>
-<tr><td>Time.GravityAcc.Std.Z</td></tr>
-<tr><td>Time.BodyAccJerk.Mean.X</td></tr>
-<tr><td>Time.BodyAccJerk.Mean.Y</td></tr>
-<tr><td>Time.BodyAccJerk.Mean.Z</td></tr>
-<tr><td>Time.BodyAccJerk.Std.X</td></tr>
-<tr><td>Time.BodyAccJerk.Std.Y</td></tr>
-<tr><td>Time.BodyAccJerk.Std.Z</td></tr>
-<tr><td>Time.BodyGyro.Mean.X</td></tr>
-<tr><td>Time.BodyGyro.Mean.Y</td></tr>
-<tr><td>Time.BodyGyro.Mean.Z</td></tr>
-<tr><td>Time.BodyGyro.Std.X</td></tr>
-<tr><td>Time.BodyGyro.Std.Y</td></tr>
-<tr><td>Time.BodyGyro.Std.Z</td></tr>
-<tr><td>Time.BodyGyroJerk.Mean.X</td></tr>
-<tr><td>Time.BodyGyroJerk.Mean.Y</td></tr>
-<tr><td>Time.BodyGyroJerk.Mean.Z</td></tr>
-<tr><td>Time.BodyGyroJerk.Std.X</td></tr>
-<tr><td>Time.BodyGyroJerk.Std.Y</td></tr>
-<tr><td>Time.BodyGyroJerk.Std.Z</td></tr>
-<tr><td>Time.BodyAccMag.Mean</td></tr>
-<tr><td>Time.BodyAccMag.Std</td></tr>
-<tr><td>Time.GravityAccMag.Mean</td></tr>
-<tr><td>Time.GravityAccMag.Std</td></tr>
-<tr><td>Time.BodyAccJerkMag.Mean</td></tr>
-<tr><td>Time.BodyAccJerkMag.Std</td></tr>
-<tr><td>Time.BodyGyroMag.Mean</td></tr>
-<tr><td>Time.BodyGyroMag.Std</td></tr>
-<tr><td>Time.BodyGyroJerkMag.Mean</td></tr>
-<tr><td>Time.BodyGyroJerkMag.Std</td></tr>
-<tr><td>FFT.BodyAcc.Mean.X</td></tr>
-<tr><td>FFT.BodyAcc.Mean.Y</td></tr>
-<tr><td>FFT.BodyAcc.Mean.Z</td></tr>
-<tr><td>FFT.BodyAcc.Std.X</td></tr>
-<tr><td>FFT.BodyAcc.Std.Y</td></tr>
-<tr><td>FFT.BodyAcc.Std.Z</td></tr>
-<tr><td>FFT.BodyAccJerk.Mean.X</td></tr>
-<tr><td>FFT.BodyAccJerk.Mean.Y</td></tr>
-<tr><td>FFT.BodyAccJerk.Mean.Z</td></tr>
-<tr><td>FFT.BodyAccJerk.Std.X</td></tr>
-<tr><td>FFT.BodyAccJerk.Std.Y</td></tr>
-<tr><td>FFT.BodyAccJerk.Std.Z</td></tr>
-<tr><td>FFT.BodyGyro.Mean.X</td></tr>
-<tr><td>FFT.BodyGyro.Mean.Y</td></tr>
-<tr><td>FFT.BodyGyro.Mean.Z</td></tr>
-<tr><td>FFT.BodyGyro.Std.X</td></tr>
-<tr><td>FFT.BodyGyro.Std.Y</td></tr>
-<tr><td>FFT.BodyGyro.Std.Z</td></tr>
-<tr><td>FFT.BodyAccMag.Mean</td></tr>
-<tr><td>FFT.BodyAccMag.Std</td></tr>
-<tr><td>FFT.BodyBodyAccJerkMag.Mean</td></tr>
-<tr><td>FFT.BodyBodyAccJerkMag.Std</td></tr>
-<tr><td>FFT.BodyBodyGyroMag.Mean</td></tr>
-<tr><td>FFT.BodyBodyGyroMag.Std</td></tr>
-<tr><td>FFT.BodyBodyGyroJerkMag.Mean</td></tr>
-<tr><td>FFT.BodyBodyGyroJerkMag.Std</td></tr>
-<tr><td></td></tr>
-</table>
 
 
 
