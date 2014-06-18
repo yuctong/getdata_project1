@@ -14,72 +14,74 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 The script run_analysis.R loads all the raw data from the UCI HAR Dataset and merges all the train, test, subjects, variables descriptions and activities datasets into one dataset. Then it proceeds to extract the mean and standard deviation variables, which then saves as dataTidy.txt.
 Afterwards, it performs a summary of dataTidy as the average of the variables per subject and variable and saves it as dataTidyMean.txt
 
-# Variables
-id    original name	tidy data name
-1	tBodyAcc-mean()-X	Time.BodyAcc.Mean.X
-2	tBodyAcc-mean()-Y	Time.BodyAcc.Mean.Y
-3	tBodyAcc-mean()-Z	Time.BodyAcc.Mean.Z
-4	tBodyAcc-std()-X	Time.BodyAcc.Std.X
-5	tBodyAcc-std()-Y	Time.BodyAcc.Std.Y
-6	tBodyAcc-std()-Z	Time.BodyAcc.Std.Z
-41	tGravityAcc-mean()-X	Time.GravityAcc.Mean.X
-42	tGravityAcc-mean()-Y	Time.GravityAcc.Mean.Y
-43	tGravityAcc-mean()-Z	Time.GravityAcc.Mean.Z
-44	tGravityAcc-std()-X	Time.GravityAcc.Std.X
-45	tGravityAcc-std()-Y	Time.GravityAcc.Std.Y
-46	tGravityAcc-std()-Z	Time.GravityAcc.Std.Z
-81	tBodyAccJerk-mean()-X	Time.BodyAccJerk.Mean.X
-82	tBodyAccJerk-mean()-Y	Time.BodyAccJerk.Mean.Y
-83	tBodyAccJerk-mean()-Z	Time.BodyAccJerk.Mean.Z
-84	tBodyAccJerk-std()-X	Time.BodyAccJerk.Std.X
-85	tBodyAccJerk-std()-Y	Time.BodyAccJerk.Std.Y
-86	tBodyAccJerk-std()-Z	Time.BodyAccJerk.Std.Z
-121	tBodyGyro-mean()-X	Time.BodyGyro.Mean.X
-122	tBodyGyro-mean()-Y	Time.BodyGyro.Mean.Y
-123	tBodyGyro-mean()-Z	Time.BodyGyro.Mean.Z
-124	tBodyGyro-std()-X	Time.BodyGyro.Std.X
-125	tBodyGyro-std()-Y	Time.BodyGyro.Std.Y
-126	tBodyGyro-std()-Z	Time.BodyGyro.Std.Z
-161	tBodyGyroJerk-mean()-X	Time.BodyGyroJerk.Mean.X
-162	tBodyGyroJerk-mean()-Y	Time.BodyGyroJerk.Mean.Y
-163	tBodyGyroJerk-mean()-Z	Time.BodyGyroJerk.Mean.Z
-164	tBodyGyroJerk-std()-X	Time.BodyGyroJerk.Std.X
-165	tBodyGyroJerk-std()-Y	Time.BodyGyroJerk.Std.Y
-166	tBodyGyroJerk-std()-Z	Time.BodyGyroJerk.Std.Z
-201	tBodyAccMag-mean()	Time.BodyAccMag.Mean
-202	tBodyAccMag-std()	Time.BodyAccMag.Std
-214	tGravityAccMag-mean()	Time.GravityAccMag.Mean
-215	tGravityAccMag-std()	Time.GravityAccMag.Std
-227	tBodyAccJerkMag-mean()	Time.BodyAccJerkMag.Mean
-228	tBodyAccJerkMag-std()	Time.BodyAccJerkMag.Std
-240	tBodyGyroMag-mean()	Time.BodyGyroMag.Mean
-241	tBodyGyroMag-std()	Time.BodyGyroMag.Std
-253	tBodyGyroJerkMag-mean()	Time.BodyGyroJerkMag.Mean
-254	tBodyGyroJerkMag-std()	Time.BodyGyroJerkMag.Std
-266	fBodyAcc-mean()-X	FFT.BodyAcc.Mean.X
-267	fBodyAcc-mean()-Y	FFT.BodyAcc.Mean.Y
-268	fBodyAcc-mean()-Z	FFT.BodyAcc.Mean.Z
-269	fBodyAcc-std()-X	FFT.BodyAcc.Std.X
-270	fBodyAcc-std()-Y	FFT.BodyAcc.Std.Y
-271	fBodyAcc-std()-Z	FFT.BodyAcc.Std.Z
-345	fBodyAccJerk-mean()-X	FFT.BodyAccJerk.Mean.X
-346	fBodyAccJerk-mean()-Y	FFT.BodyAccJerk.Mean.Y
-347	fBodyAccJerk-mean()-Z	FFT.BodyAccJerk.Mean.Z
-348	fBodyAccJerk-std()-X	FFT.BodyAccJerk.Std.X
-349	fBodyAccJerk-std()-Y	FFT.BodyAccJerk.Std.Y
-350	fBodyAccJerk-std()-Z	FFT.BodyAccJerk.Std.Z
-424	fBodyGyro-mean()-X	FFT.BodyGyro.Mean.X
-425	fBodyGyro-mean()-Y	FFT.BodyGyro.Mean.Y
-426	fBodyGyro-mean()-Z	FFT.BodyGyro.Mean.Z
-427	fBodyGyro-std()-X	FFT.BodyGyro.Std.X
-428	fBodyGyro-std()-Y	FFT.BodyGyro.Std.Y
-429	fBodyGyro-std()-Z	FFT.BodyGyro.Std.Z
-503	fBodyAccMag-mean()	FFT.BodyAccMag.Mean
-504	fBodyAccMag-std()	FFT.BodyAccMag.Std
-516	fBodyBodyAccJerkMag-mean()	FFT.BodyBodyAccJerkMag.Mean
-517	fBodyBodyAccJerkMag-std()	FFT.BodyBodyAccJerkMag.Std
-529	fBodyBodyGyroMag-mean()	FFT.BodyBodyGyroMag.Mean
-530	fBodyBodyGyroMag-std()	FFT.BodyBodyGyroMag.Std
-542	fBodyBodyGyroJerkMag-mean()	FFT.BodyBodyGyroJerkMag.Mean
-543	fBodyBodyGyroJerkMag-std()	FFT.BodyBodyGyroJerkMag.Std
-
+## Variables
+<table>
+<tr><td>id"</td><td>"feature"</td><td>"descr.name</td></tr>
+<tr><td>1</td><td>"tBodyAcc-mean()-X"</td><td>"Time.BodyAcc.Mean.X</td></tr>
+<tr><td>2</td><td>"tBodyAcc-mean()-Y"</td><td>"Time.BodyAcc.Mean.Y</td></tr>
+<tr><td>3</td><td>"tBodyAcc-mean()-Z"</td><td>"Time.BodyAcc.Mean.Z</td></tr>
+<tr><td>4</td><td>"tBodyAcc-std()-X"</td><td>"Time.BodyAcc.Std.X</td></tr>
+<tr><td>5</td><td>"tBodyAcc-std()-Y"</td><td>"Time.BodyAcc.Std.Y</td></tr>
+<tr><td>6</td><td>"tBodyAcc-std()-Z"</td><td>"Time.BodyAcc.Std.Z</td></tr>
+<tr><td>41</td><td>"tGravityAcc-mean()-X"</td><td>"Time.GravityAcc.Mean.X</td></tr>
+<tr><td>42</td><td>"tGravityAcc-mean()-Y"</td><td>"Time.GravityAcc.Mean.Y</td></tr>
+<tr><td>43</td><td>"tGravityAcc-mean()-Z"</td><td>"Time.GravityAcc.Mean.Z</td></tr>
+<tr><td>44</td><td>"tGravityAcc-std()-X"</td><td>"Time.GravityAcc.Std.X</td></tr>
+<tr><td>45</td><td>"tGravityAcc-std()-Y"</td><td>"Time.GravityAcc.Std.Y</td></tr>
+<tr><td>46</td><td>"tGravityAcc-std()-Z"</td><td>"Time.GravityAcc.Std.Z</td></tr>
+<tr><td>81</td><td>"tBodyAccJerk-mean()-X"</td><td>"Time.BodyAccJerk.Mean.X</td></tr>
+<tr><td>82</td><td>"tBodyAccJerk-mean()-Y"</td><td>"Time.BodyAccJerk.Mean.Y</td></tr>
+<tr><td>83</td><td>"tBodyAccJerk-mean()-Z"</td><td>"Time.BodyAccJerk.Mean.Z</td></tr>
+<tr><td>84</td><td>"tBodyAccJerk-std()-X"</td><td>"Time.BodyAccJerk.Std.X</td></tr>
+<tr><td>85</td><td>"tBodyAccJerk-std()-Y"</td><td>"Time.BodyAccJerk.Std.Y</td></tr>
+<tr><td>86</td><td>"tBodyAccJerk-std()-Z"</td><td>"Time.BodyAccJerk.Std.Z</td></tr>
+<tr><td>121</td><td>"tBodyGyro-mean()-X"</td><td>"Time.BodyGyro.Mean.X</td></tr>
+<tr><td>122</td><td>"tBodyGyro-mean()-Y"</td><td>"Time.BodyGyro.Mean.Y</td></tr>
+<tr><td>123</td><td>"tBodyGyro-mean()-Z"</td><td>"Time.BodyGyro.Mean.Z</td></tr>
+<tr><td>124</td><td>"tBodyGyro-std()-X"</td><td>"Time.BodyGyro.Std.X</td></tr>
+<tr><td>125</td><td>"tBodyGyro-std()-Y"</td><td>"Time.BodyGyro.Std.Y</td></tr>
+<tr><td>126</td><td>"tBodyGyro-std()-Z"</td><td>"Time.BodyGyro.Std.Z</td></tr>
+<tr><td>161</td><td>"tBodyGyroJerk-mean()-X"</td><td>"Time.BodyGyroJerk.Mean.X</td></tr>
+<tr><td>162</td><td>"tBodyGyroJerk-mean()-Y"</td><td>"Time.BodyGyroJerk.Mean.Y</td></tr>
+<tr><td>163</td><td>"tBodyGyroJerk-mean()-Z"</td><td>"Time.BodyGyroJerk.Mean.Z</td></tr>
+<tr><td>164</td><td>"tBodyGyroJerk-std()-X"</td><td>"Time.BodyGyroJerk.Std.X</td></tr>
+<tr><td>165</td><td>"tBodyGyroJerk-std()-Y"</td><td>"Time.BodyGyroJerk.Std.Y</td></tr>
+<tr><td>166</td><td>"tBodyGyroJerk-std()-Z"</td><td>"Time.BodyGyroJerk.Std.Z</td></tr>
+<tr><td>201</td><td>"tBodyAccMag-mean()"</td><td>"Time.BodyAccMag.Mean</td></tr>
+<tr><td>202</td><td>"tBodyAccMag-std()"</td><td>"Time.BodyAccMag.Std</td></tr>
+<tr><td>214</td><td>"tGravityAccMag-mean()"</td><td>"Time.GravityAccMag.Mean</td></tr>
+<tr><td>215</td><td>"tGravityAccMag-std()"</td><td>"Time.GravityAccMag.Std</td></tr>
+<tr><td>227</td><td>"tBodyAccJerkMag-mean()"</td><td>"Time.BodyAccJerkMag.Mean</td></tr>
+<tr><td>228</td><td>"tBodyAccJerkMag-std()"</td><td>"Time.BodyAccJerkMag.Std</td></tr>
+<tr><td>240</td><td>"tBodyGyroMag-mean()"</td><td>"Time.BodyGyroMag.Mean</td></tr>
+<tr><td>241</td><td>"tBodyGyroMag-std()"</td><td>"Time.BodyGyroMag.Std</td></tr>
+<tr><td>253</td><td>"tBodyGyroJerkMag-mean()"</td><td>"Time.BodyGyroJerkMag.Mean</td></tr>
+<tr><td>254</td><td>"tBodyGyroJerkMag-std()"</td><td>"Time.BodyGyroJerkMag.Std</td></tr>
+<tr><td>266</td><td>"fBodyAcc-mean()-X"</td><td>"FFT.BodyAcc.Mean.X</td></tr>
+<tr><td>267</td><td>"fBodyAcc-mean()-Y"</td><td>"FFT.BodyAcc.Mean.Y</td></tr>
+<tr><td>268</td><td>"fBodyAcc-mean()-Z"</td><td>"FFT.BodyAcc.Mean.Z</td></tr>
+<tr><td>269</td><td>"fBodyAcc-std()-X"</td><td>"FFT.BodyAcc.Std.X</td></tr>
+<tr><td>270</td><td>"fBodyAcc-std()-Y"</td><td>"FFT.BodyAcc.Std.Y</td></tr>
+<tr><td>271</td><td>"fBodyAcc-std()-Z"</td><td>"FFT.BodyAcc.Std.Z</td></tr>
+<tr><td>345</td><td>"fBodyAccJerk-mean()-X"</td><td>"FFT.BodyAccJerk.Mean.X</td></tr>
+<tr><td>346</td><td>"fBodyAccJerk-mean()-Y"</td><td>"FFT.BodyAccJerk.Mean.Y</td></tr>
+<tr><td>347</td><td>"fBodyAccJerk-mean()-Z"</td><td>"FFT.BodyAccJerk.Mean.Z</td></tr>
+<tr><td>348</td><td>"fBodyAccJerk-std()-X"</td><td>"FFT.BodyAccJerk.Std.X</td></tr>
+<tr><td>349</td><td>"fBodyAccJerk-std()-Y"</td><td>"FFT.BodyAccJerk.Std.Y</td></tr>
+<tr><td>350</td><td>"fBodyAccJerk-std()-Z"</td><td>"FFT.BodyAccJerk.Std.Z</td></tr>
+<tr><td>424</td><td>"fBodyGyro-mean()-X"</td><td>"FFT.BodyGyro.Mean.X</td></tr>
+<tr><td>425</td><td>"fBodyGyro-mean()-Y"</td><td>"FFT.BodyGyro.Mean.Y</td></tr>
+<tr><td>426</td><td>"fBodyGyro-mean()-Z"</td><td>"FFT.BodyGyro.Mean.Z</td></tr>
+<tr><td>427</td><td>"fBodyGyro-std()-X"</td><td>"FFT.BodyGyro.Std.X</td></tr>
+<tr><td>428</td><td>"fBodyGyro-std()-Y"</td><td>"FFT.BodyGyro.Std.Y</td></tr>
+<tr><td>429</td><td>"fBodyGyro-std()-Z"</td><td>"FFT.BodyGyro.Std.Z</td></tr>
+<tr><td>503</td><td>"fBodyAccMag-mean()"</td><td>"FFT.BodyAccMag.Mean</td></tr>
+<tr><td>504</td><td>"fBodyAccMag-std()"</td><td>"FFT.BodyAccMag.Std</td></tr>
+<tr><td>516</td><td>"fBodyBodyAccJerkMag-mean()"</td><td>"FFT.BodyBodyAccJerkMag.Mean</td></tr>
+<tr><td>517</td><td>"fBodyBodyAccJerkMag-std()"</td><td>"FFT.BodyBodyAccJerkMag.Std</td></tr>
+<tr><td>529</td><td>"fBodyBodyGyroMag-mean()"</td><td>"FFT.BodyBodyGyroMag.Mean</td></tr>
+<tr><td>530</td><td>"fBodyBodyGyroMag-std()"</td><td>"FFT.BodyBodyGyroMag.Std</td></tr>
+<tr><td>542</td><td>"fBodyBodyGyroJerkMag-mean()"</td><td>"FFT.BodyBodyGyroJerkMag.Mean</td></tr>
+<tr><td>543</td><td>"fBodyBodyGyroJerkMag-std()"</td><td>"FFT.BodyBodyGyroJerkMag.Std</td></tr>
+<tr><td></td></tr>
+</table>
