@@ -16,7 +16,7 @@ Afterwards, it performs a summary of dataTidy as the average of the variables pe
 
 ## Variables Transformation
 <table>
-<tr><td>id"</td><td>"feature"</td><td>"descr.name</td></tr>
+<tr><td>original id</td><td>original name</td><td>descriptive name</td></tr>
 <tr><td>1</td><td>"tBodyAcc-mean()-X"</td><td>"Time.BodyAcc.Mean.X</td></tr>
 <tr><td>2</td><td>"tBodyAcc-mean()-Y"</td><td>"Time.BodyAcc.Mean.Y</td></tr>
 <tr><td>3</td><td>"tBodyAcc-mean()-Z"</td><td>"Time.BodyAcc.Mean.Z</td></tr>
