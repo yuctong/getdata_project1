@@ -87,8 +87,10 @@ Afterwards, it performs a summary of dataTidy as the average of the variables pe
 </table>
 
 # data.tidy dataset
+Where each row is an observation of a given subject and activity for the variables
+
 <table>
-<tr><td>x</td></tr>
+<tr><td>Variable</td></tr>
 <tr><td>subject</td></tr>
 <tr><td>Time.BodyAcc.Mean.X</td></tr>
 <tr><td>Time.BodyAcc.Mean.Y</td></tr>
@@ -162,8 +164,10 @@ Afterwards, it performs a summary of dataTidy as the average of the variables pe
 
 
 # data.tidyMean dataset
+Where each row is the mean of the variables per subject and activity.
+
 <table>
-<tr><td>x</td></tr>
+<tr><td>Variables</td></tr>
 <tr><td>subject</td></tr>
 <tr><td>activity.name</td></tr>
 <tr><td>Time.BodyAcc.Mean.X</td></tr>
@@ -234,5 +238,6 @@ Afterwards, it performs a summary of dataTidy as the average of the variables pe
 <tr><td>FFT.BodyBodyGyroJerkMag.Std</td></tr>
 <tr><td></td></tr>
 </table>
+
 
 
