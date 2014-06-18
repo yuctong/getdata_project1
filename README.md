@@ -22,6 +22,6 @@ It process the raw data of training and tests and uses only the variables of mea
 To run the script you need to set the working directory to the folder where the unzipped files have been located.
 
 ## Return
-The script return two text files: \t
-1. dataTidy.txt      -> tidy data with variables of mean and std \t
+The script return two text files: \n
+1. dataTidy.txt      -> tidy data with variables of mean and std \n
 2. dataTidyMean.txt  -> tidy data with the average of each variable for each activity and each subject
